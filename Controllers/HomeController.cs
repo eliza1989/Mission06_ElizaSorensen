@@ -1,8 +1,8 @@
-using _6.Models;
+using Mission06_Sorensen.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace _6.Controllers
+namespace Mission06_Sorensen.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,9 +15,17 @@ namespace _6.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult MovieForm()
         {
             return View();  
+        }
+
+        [HttpPost]
+        public IActionResult MovieForm(Film response) {
+
+            return View("Thanks", response);
+
         }
 
         public IActionResult GetToKnowJoel()
