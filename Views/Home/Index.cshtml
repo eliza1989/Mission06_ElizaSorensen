@@ -1,17 +1,24 @@
 ﻿@{
     ViewData["Title"] = "The Joe Hilton Film Collection";
 }
-
+<!--Create a page that acts as a home page and directs the users accross the site-->
 <div class="text-center">
     <h1 class="display-4">Joel Hilton Film Collection</h1>
-    <img src="~/joelhiltonheadshot.jpg" />
+    <img src="~/joelhiltonheadshot.jpg" width="'450'"/>
 </div>
-<div>
+<br />
+<br />
+<div class ="text-center">
+
     <a asp-controller="Home" asp-action="GetToKnowJoel">Get to know Joel Hilton!</a>
 </div>
-<div>
-    <img src="~/laughing-tweens-watching-movie-dark-260nw-2217898151.jpg copy.png" />
+<br />
+<br />
+<div class="text-center">
+    <img src="~/laughing-tweens-watching-movie-dark-260nw-2217898151.jpg copy.png" width="450"/>
 </div>
-<div>
+<div class="text-center">
+
     <a asp-controller="Home" asp-action="MovieForm">Add a Movie to Joel's Collection!</a>
+
 </div>

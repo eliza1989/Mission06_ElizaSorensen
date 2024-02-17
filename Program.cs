@@ -21,6 +21,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+//input settings that allow app to run correctly and route correctly
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
