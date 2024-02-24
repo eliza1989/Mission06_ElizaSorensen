@@ -2,8 +2,9 @@
     ViewData["Title"] = "The Joe Hilton Film Collection";
 }
 
-@model Film
+@model Movies
 <!--Thanks users for adding movies and is specific to category-->
 <div class="text-center">
-    <h1>Thanks for Adding a @Model.Category Movie to My Collection!</h1>
+    <h1>Thanks for Adding @Model.Title to My Collection!</h1>
+    <a asp-controller="Home" asp-action="MovieList">View All Movies Here</a>
 </div>
